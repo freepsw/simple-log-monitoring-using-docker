@@ -158,6 +158,9 @@ ports:
 
 ## STEP 4. run elasticsearch & kibana
 - https://github.com/deviantony/docker-elk 참고
+- 여기서 사용하고 있는 logstash docker image가 2017.06.20 이후로 deprecated 됨
+ - https://hub.docker.com/_/logstash/
+ - 따라서 공식 docker github인 https://github.com/elastic/logstash-docker로 변경필요
 
 ### Run elasticsearch
 
@@ -191,6 +194,16 @@ logstash:
 ### Run docker compose
 ```
 > docker-compose up -d
+```
+
+- 아래와 같은 에러가 보이면 docker-py 버전 문제일 수 있으니, 다시 업그레이드 하자.
+```
+WARNING: Dependency conflict: an older version of the 'docker-py' package may be polluting the namespace. If you're experiencing crashes, run the following command to remedy the issue:
+```
+```
+> sudo pip uninstall docker-py
+> sudo pip uninstall docker
+> sudo pip install docker
 ```
 
 
