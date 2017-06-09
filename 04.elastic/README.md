@@ -41,7 +41,7 @@ sudo pip install docker
 > sudo yum install net-tools
 > sudo yum install nc
 > sudo yum install curl
-> sudo yum install wget
+> sudo yum install wget git
 ```
 
 
@@ -50,6 +50,15 @@ sudo pip install docker
 > git clone https://github.com/deviantony/docker-elk.git
 > cd docker-elk
 > docker-compose up -d
+
+# container 상태 모니터링
+> docker-compose ps
+
+# docker-compose 중지
+> docker-compose stop
+
+# log 확인
+> docker-compose logs -f
 ```
 
 - logstash config
