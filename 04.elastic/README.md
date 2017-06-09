@@ -17,6 +17,7 @@ sudo yum-config-manager --enable docker-ce-edge
 sudo yum makecache fast
 sudo yum install docker-ce
 sudo systemctl start docker
+sudo usermod -aG docker <username>
 ```
 
 #### install docker-compose
