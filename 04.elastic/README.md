@@ -45,7 +45,7 @@ sudo pip install docker
 ```
 
 
-## STEP 02. copy doekr-elastic from github & run elk stack
+## STEP 02. copy docker-elastic from github & run elk stack
 ```
 > git clone https://github.com/deviantony/docker-elk.git
 > cd docker-elk
